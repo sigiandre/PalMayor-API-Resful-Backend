@@ -1,0 +1,9 @@
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\bin\Debug\netstandard2.0\ApiVP.Domain.deps.json
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\bin\Debug\netstandard2.0\ApiVP.Domain.dll
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\bin\Debug\netstandard2.0\ApiVP.Domain.pdb
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\obj\Debug\netstandard2.0\ApiVP.Domain.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\obj\Debug\netstandard2.0\ApiVP.Domain.AssemblyInfoInputs.cache
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\obj\Debug\netstandard2.0\ApiVP.Domain.AssemblyInfo.cs
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\obj\Debug\netstandard2.0\ApiVP.Domain.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\obj\Debug\netstandard2.0\ApiVP.Domain.dll
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Domain\obj\Debug\netstandard2.0\ApiVP.Domain.pdb

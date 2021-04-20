@@ -1,0 +1,15 @@
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\bin\Debug\netcoreapp3.1\ApiVP.Repository.deps.json
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\bin\Debug\netcoreapp3.1\ApiVP.Repository.runtimeconfig.json
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\bin\Debug\netcoreapp3.1\ApiVP.Repository.runtimeconfig.dev.json
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\bin\Debug\netcoreapp3.1\ApiVP.Repository.dll
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\bin\Debug\netcoreapp3.1\ApiVP.Repository.pdb
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\bin\Debug\netcoreapp3.1\ApiVP.Domain.dll
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\bin\Debug\netcoreapp3.1\ApiVP.Domain.pdb
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.csprojAssemblyReference.cache
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.AssemblyInfoInputs.cache
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.AssemblyInfo.cs
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.csproj.CoreCompileInputs.cache
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.csproj.CopyComplete
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.dll
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.pdb
+C:\Users\andre\Desktop\VidaPlenaAPI\ApiVP.Repository\obj\Debug\netcoreapp3.1\ApiVP.Repository.genruntimeconfig.cache

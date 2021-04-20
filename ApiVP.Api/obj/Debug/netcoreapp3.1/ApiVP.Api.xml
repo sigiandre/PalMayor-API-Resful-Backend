@@ -1,0 +1,912 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiVP.Api</name>
+    </assembly>
+    <members>
+        <member name="M:ApiVP.Api.Controllers.v1.ABVCsController.Get">
+            <summary>
+            Obtener todos los ABVC(Actividad Básica de la Vida Cotidiana)
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ABVCsController.Get(System.Int32)">
+            <summary>
+            Obtener un ABVC(Actividad Básica de la Vida Cotidiana) en específico
+            </summary>
+            <param name="id">Id del ABVC a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ABVCsController.Post(ApiVP.Domain.Models.ABVCCreateDTO)">
+            <summary>
+            Registra un ABVC(Actividad Básica de la Vida Cotidiana)
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ABVCsController.Put(System.Int32,ApiVP.Domain.Models.ABVCCreateDTO)">
+            <summary>
+            Actualiza un ABVC(Actividad Básica de la Vida Cotidiana) en específico
+            </summary>
+            <param name="id">Id del ABVC a actualizar</param>
+            <param name="abvcCreate">Cuerpo del ABVC a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ABVCsController.Delete(System.Int32)">
+            <summary>
+            Elimina un ABVC(Actividad Básica de la Vida Cotidiana) en específico
+            </summary>
+            <param name="id">Id del ABVC a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.AncianosController.Get">
+            <summary>
+            Obtener todos los Ancianos
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.AncianosController.Get(System.Int32)">
+            <summary>
+            Obtener un Anciano en específico mediante Id
+            </summary>
+            <param name="id">Id del Anciano a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.AncianosController.GetByFamiliarCorreo(System.String)">
+            <summary>
+            Obtener un Anciano en específico mediante Correo
+            </summary>
+            <param name="correo">Correo del Familiar para obtener al Anciano</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.AncianosController.Post(ApiVP.Domain.Models.AncianoCreateDTO)">
+            <summary>
+            Registrar un Anciano
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.AncianosController.Put(System.Int32,ApiVP.Domain.Models.AncianoCreateDTO)">
+            <summary>
+            Actualizar un Anciano en específico mediante Id
+            </summary>
+            <param name="id">Id del Anciano</param>
+            <param name="ancianoCreate">Cuerpo del Anciano a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.AncianosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Anciano en específico mediante Id
+            </summary>
+            <param name="id">Id del Anciano a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermeroOfertasController.GetByEnfermero(System.String)">
+            <summary>
+            Obtener un EnfermeroOferta en específico mediante correo de Enfermero
+            </summary>
+            <param name="correo">Correo del Enfermero</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermeroOfertasController.GetByOferta(System.Int32)">
+            <summary>
+            Obtener un EnfermeroOferta en específico mediante Id de Oferta
+            </summary>
+            <param name="idOferta">Id de la Oferta</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermeroOfertasController.Get(System.Int32,System.Int32)">
+            <summary>
+            Obtener un EnfermeroOferta en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero a obtener</param>
+            <param name="id2">Id de la Oferta a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermeroOfertasController.Post(ApiVP.Domain.Models.EnfermeroOfertaCreateDTO)">
+            <summary>
+            Registrar un EnfermeroOferta
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermerosController.Get">
+            <summary>
+            Obtener todos los Enfermeros
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermerosController.Get(System.Int32)">
+            <summary>
+            Obtener un Enfermero en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermerosController.GetByCorreo(System.String)">
+            <summary>
+            Obtener un Enfermero en específico mediante su correo
+            </summary>
+            <param name="correo">Correo del Enfermero a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermerosController.Post(ApiVP.Domain.Models.EnfermeroCreateDTO)">
+            <summary>
+            Registrar un Enfermero
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermerosController.Put(System.Int32,ApiVP.Domain.Models.EnfermeroCreateDTO)">
+            <summary>
+            Actualizar un Enfermero en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero</param>
+            <param name="enfermeroCreate">Cuerpo del Anciano a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EnfermerosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Enfermero en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EspecialidadesController.Get">
+            <summary>
+            Obtener todos las Especialidades
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EspecialidadesController.Get(System.Int32)">
+            <summary>
+            Obtener una Especialidad en específico mediante Id
+            </summary>
+            <param name="id">Id de la Especialidad a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EspecialidadesController.Post(ApiVP.Domain.Models.EspecialidadCreateDTO)">
+            <summary>
+            Registrar una Especialidad
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EspecialidadesController.Put(System.Int32,ApiVP.Domain.Models.EspecialidadCreateDTO)">
+            <summary>
+            Actualizar una Especialidad en específico mediante Id
+            </summary>
+            <param name="id">Id de la Especialidad</param>
+            <param name="especialidadCreate">Cuerpo de la Especialidad a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.EspecialidadesController.Delete(System.Int32)">
+            <summary>
+            Eliminar una Especialidad en específico mediante Id
+            </summary>
+            <param name="id">Id de la Especialidad a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FamiliaresController.Get">
+            <summary>
+            Obtener todos los Familiares
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FamiliaresController.Get(System.Int32)">
+            <summary>
+            Obtener un Familiar en específico mediante Id
+            </summary>
+            <param name="id">Id del Familiar a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FamiliaresController.GetByCorreo(System.String)">
+            <summary>
+            Obtener un Familiar en específico mediante Correo
+            </summary>
+            <param name="param">Correo del Familiar a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FamiliaresController.Post(ApiVP.Domain.Models.FamiliarCreateDTO)">
+            <summary>
+            Registrar un Familiar
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FamiliaresController.Put(System.Int32,ApiVP.Domain.Models.FamiliarCreateDTO)">
+            <summary>
+            Actualizar un Familiar en específico mediante Id
+            </summary>
+            <param name="id">Id del Familiar</param>
+            <param name="familiarCreate">Cuerpo del Familiar a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FamiliaresController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Familiar en específico mediante Id
+            </summary>
+            <param name="id">Id del Familiar a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FechaAtencionesController.Get">
+            <summary>
+            Obtener todos las FechaAtencion
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FechaAtencionesController.Get(System.Int32)">
+            <summary>
+            Obtener una FechaAtencion en específico mediante Id
+            </summary>
+            <param name="id">Id de la FechaAtencion a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FechaAtencionesController.Post(ApiVP.Domain.Models.FechaAtencionCreateDTO)">
+            <summary>
+            Registrar una FechaAtencion
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FechaAtencionesController.Put(System.Int32,ApiVP.Domain.Models.FechaAtencionCreateDTO)">
+            <summary>
+            Actualizar una FechaAtencion en específico mediante Id
+            </summary>
+            <param name="id">Id de la FechaAtencion</param>
+            <param name="fechaAtencionCreate">Cuerpo de la FechaAtencion a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.FechaAtencionesController.Delete(System.Int32)">
+            <summary>
+            Eliminar una FechaAtencion en específico mediante Id
+            </summary>
+            <param name="id">Id de la FechaAtencion a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.GradosController.Get">
+            <summary>
+            Obtener todos los Grados
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.GradosController.Get(System.Int32)">
+            <summary>
+            Obtener un Grado en específico mediante Id
+            </summary>
+            <param name="id">Id del Grado a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.GradosController.Post(ApiVP.Domain.Models.GradoCreateDTO)">
+            <summary>
+            Registrar un Grado
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.GradosController.Put(System.Int32,ApiVP.Domain.Models.GradoCreateDTO)">
+            <summary>
+            Actualizar un Grado en específico mediante Id
+            </summary>
+            <param name="id">Id del Grado</param>
+            <param name="gradoCreate">Cuerpo del Grado a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.GradosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Grado en específico mediante Id
+            </summary>
+            <param name="id">Id del Grado a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.OfertasController.Get">
+            <summary>
+            Obtener todos las Ofertas
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.OfertasController.Get(System.Int32)">
+            <summary>
+            Obtener una Oferta en específico mediante Id
+            </summary>
+            <param name="id">Id de la Oferta a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.OfertasController.GetByFamiliarCorreo(System.String)">
+            <summary>
+            Obtener una Oferta en específico mediante Correo
+            </summary>
+            <param name="param">Correo de la Oferta a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.OfertasController.Post(ApiVP.Domain.Models.OfertaCreateDTO)">
+            <summary>
+            Registrar una Oferta
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.OfertasController.Put(System.Int32,ApiVP.Domain.Models.OfertaCreateDTO)">
+            <summary>
+            Actualizar una Oferta en específico mediante Id
+            </summary>
+            <param name="id">Id de la Oferta</param>
+            <param name="ofertaCreate">Cuerpo de la Oferta a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.OfertasController.Delete(System.Int32)">
+            <summary>
+            Eliminar una Oferta en específico mediante Id
+            </summary>
+            <param name="id">Id de la Oferta a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RangoHorasController.Get">
+            <summary>
+            Obtener todos los RangoHora
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RangoHorasController.Get(System.Int32)">
+            <summary>
+            Obtener un RangoHora en específico mediante Id
+            </summary>
+            <param name="id">Id del RangoHora a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RangoHorasController.Post(ApiVP.Domain.Models.RangoHoraCreateDTO)">
+            <summary>
+            Registrar un RangoHora
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RangoHorasController.Put(System.Int32,ApiVP.Domain.Models.RangoHoraCreateDTO)">
+            <summary>
+            Actualizar un RangoHora en específico mediante Id
+            </summary>
+            <param name="id">Id del RangoHora</param>
+            <param name="rangoHoraCreate">Cuerpo del RangoHora a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RangoHorasController.Delete(System.Int32)">
+            <summary>
+            Eliminar un RangoHora en específico mediante Id
+            </summary>
+            <param name="id">Id del RangoHora a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RolesController.Get">
+            <summary>
+            Obtener todos los Roles
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RolesController.Get(System.Int32)">
+            <summary>
+            Obtener un Rol en específico mediante Id
+            </summary>
+            <param name="id">Id del Rol a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RolesController.Post(ApiVP.Domain.Models.RolCreateDTO)">
+            <summary>
+            Registrar un Rol
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RolesController.Put(System.Int32,ApiVP.Domain.Models.RolCreateDTO)">
+            <summary>
+            Actualizar un Rol en específico mediante Id
+            </summary>
+            <param name="id">Id del Rol</param>
+            <param name="rolCreate">Cuerpo del Rol a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.RolesController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Rol en específico mediante Id
+            </summary>
+            <param name="id">Id del Rol a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ServiciosController.Get">
+            <summary>
+            Obtener todos los Servicios
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ServiciosController.Get(System.Int32)">
+            <summary>
+            Obtener un Servicio en específico mediante Id
+            </summary>
+            <param name="id">Id del Servicio a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ServiciosController.GetByFamiliarCorreo(System.String)">
+            <summary>
+            Obtener un Servicio en específico mediante correo del familiar
+            </summary>
+            <param name="correo">Correo del familiar para obtener los Servicios</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ServiciosController.GetByEnfermeroCorreo(System.String)">
+            <summary>
+            Obtener un Servicio en específico mediante correo del enfermero
+            </summary>
+            <param name="correo">Correo del enfermero para obtener los Servicios</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ServiciosController.Post(ApiVP.Domain.Models.ServicioCreateDTO)">
+            <summary>
+            Registrar un Servicio
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ServiciosController.Put(System.Int32,ApiVP.Domain.Models.ServicioCreateDTO)">
+            <summary>
+            Actualizar un Servicio en específico mediante Id
+            </summary>
+            <param name="id">Id del Servicio</param>
+            <param name="servicioCreate">Cuerpo del Servicio a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.ServiciosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Servicio en específico mediante Id
+            </summary>
+            <param name="id">Id del Servicio a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.TiposController.Get">
+            <summary>
+            Obtener todos los Tipos
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.TiposController.Get(System.Int32)">
+            <summary>
+            Obtener un Tipo en específico mediante Id
+            </summary>
+            <param name="id">Id del Tipo a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.TiposController.Post(ApiVP.Domain.Models.TipoCreateDTO)">
+            <summary>
+            Registrar un Tipo
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.TiposController.Put(System.Int32,ApiVP.Domain.Models.TipoCreateDTO)">
+            <summary>
+            Actualizar un Tipo en específico mediante Id
+            </summary>
+            <param name="id">Id del Tipo</param>
+            <param name="tipoCreate">Cuerpo del Tipo a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.TiposController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Tipo en específico mediante Id
+            </summary>
+            <param name="id">Id del Tipo a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.Get">
+            <summary>
+            Obtener todos los Usuarios
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.GetCorreos">
+            <summary>
+            Obtener todos los correos de los Usuarios
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.Get(System.Int32)">
+            <summary>
+            Obtener un Usuario en específico mediante Id
+            </summary>
+            <param name="id">Id del Usuario a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.Post(ApiVP.Domain.Models.UsuarioCreateDTO)">
+            <summary>
+            Registrar un Usuario
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.Put(System.Int32,ApiVP.Domain.Models.UsuarioCreateDTO)">
+            <summary>
+            Actualizar un Usuario en específico mediante Id
+            </summary>
+            <param name="id">Id del Usuario</param>
+            <param name="usuarioCreate">Cuerpo del Usuario a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.Patch(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{ApiVP.Domain.Models.UsuarioCreateDTO})">
+            <summary>
+            Actualizar un campo en específico del Usuario
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Usuario en específico mediante Id
+            </summary>
+            <param name="id">Id del Usuario a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v1.UsuariosController.Login(ApiVP.Domain.Models.UsuarioCreateDTO)">
+            <summary>
+            Login del Usuario
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ABVCsController.Get">
+            <summary>
+            Obtener todos los ABVC(Actividad Básica de la Vida Cotidiana)
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ABVCsController.Get(System.Int32)">
+            <summary>
+            Obtener un ABVC(Actividad Básica de la Vida Cotidiana) en específico
+            </summary>
+            <param name="id">Id del ABVC a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ABVCsController.Post(ApiVP.Domain.Models.ABVCCreateDTO)">
+            <summary>
+            Registra un ABVC(Actividad Básica de la Vida Cotidiana)
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ABVCsController.Put(System.Int32,ApiVP.Domain.Models.ABVCCreateDTO)">
+            <summary>
+            Actualiza un ABVC(Actividad Básica de la Vida Cotidiana) en específico
+            </summary>
+            <param name="id">Id del ABVC a actualizar</param>
+            <param name="abvcCreate">Cuerpo del ABVC a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ABVCsController.Delete(System.Int32)">
+            <summary>
+            Elimina un ABVC(Actividad Básica de la Vida Cotidiana) en específico
+            </summary>
+            <param name="id">Id del ABVC a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.AncianosController.Get">
+            <summary>
+            Obtener todos los Ancianos
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.AncianosController.Get(System.Int32)">
+            <summary>
+            Obtener un Anciano en específico mediante Id
+            </summary>
+            <param name="id">Id del Anciano a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.AncianosController.GetByFamiliarCorreo(System.String)">
+            <summary>
+            Obtener un Anciano en específico mediante Correo
+            </summary>
+            <param name="correo">Correo del Familiar para obtener al Anciano</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.AncianosController.Post(ApiVP.Domain.Models.AncianoCreateDTO)">
+            <summary>
+            Registrar un Anciano
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.AncianosController.Put(System.Int32,ApiVP.Domain.Models.AncianoCreateDTO)">
+            <summary>
+            Actualizar un Anciano en específico mediante Id
+            </summary>
+            <param name="id">Id del Anciano</param>
+            <param name="ancianoCreate">Cuerpo del Anciano a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.AncianosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Anciano en específico mediante Id
+            </summary>
+            <param name="id">Id del Anciano a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermeroOfertasController.GetByEnfermero(System.String)">
+            <summary>
+            Obtener un EnfermeroOferta en específico mediante correo de Enfermero
+            </summary>
+            <param name="correo">Correo del Enfermero</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermeroOfertasController.GetByOferta(System.Int32)">
+            <summary>
+            Obtener un EnfermeroOferta en específico mediante Id de Oferta
+            </summary>
+            <param name="idOferta">Id de la Oferta</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermeroOfertasController.Get(System.Int32,System.Int32)">
+            <summary>
+            Obtener un EnfermeroOferta en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero a obtener</param>
+            <param name="id2">Id de la Oferta a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermeroOfertasController.Post(ApiVP.Domain.Models.EnfermeroOfertaCreateDTO)">
+            <summary>
+            Registrar un EnfermeroOferta
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermerosController.Get">
+            <summary>
+            Obtener todos los Enfermeros
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermerosController.Get(System.Int32)">
+            <summary>
+            Obtener un Enfermero en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermerosController.GetByCorreo(System.String)">
+            <summary>
+            Obtener un Enfermero en específico mediante su correo
+            </summary>
+            <param name="correo">Correo del Enfermero a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermerosController.Post(ApiVP.Domain.Models.EnfermeroCreateDTO)">
+            <summary>
+            Registrar un Enfermero
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermerosController.Put(System.Int32,ApiVP.Domain.Models.EnfermeroCreateDTO)">
+            <summary>
+            Actualizar un Enfermero en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero</param>
+            <param name="enfermeroCreate">Cuerpo del Anciano a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EnfermerosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Enfermero en específico mediante Id
+            </summary>
+            <param name="id">Id del Enfermero a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EspecialidadesController.Get">
+            <summary>
+            Obtener todos las Especialidades
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EspecialidadesController.Get(System.Int32)">
+            <summary>
+            Obtener una Especialidad en específico mediante Id
+            </summary>
+            <param name="id">Id de la Especialidad a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EspecialidadesController.Post(ApiVP.Domain.Models.EspecialidadCreateDTO)">
+            <summary>
+            Registrar una Especialidad
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EspecialidadesController.Put(System.Int32,ApiVP.Domain.Models.EspecialidadCreateDTO)">
+            <summary>
+            Actualizar una Especialidad en específico mediante Id
+            </summary>
+            <param name="id">Id de la Especialidad</param>
+            <param name="especialidadCreate">Cuerpo de la Especialidad a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.EspecialidadesController.Delete(System.Int32)">
+            <summary>
+            Eliminar una Especialidad en específico mediante Id
+            </summary>
+            <param name="id">Id de la Especialidad a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FamiliaresController.Get">
+            <summary>
+            Obtener todos los Familiares
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FamiliaresController.Get(System.Int32)">
+            <summary>
+            Obtener un Familiar en específico mediante Id
+            </summary>
+            <param name="id">Id del Familiar a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FamiliaresController.GetByCorreo(System.String)">
+            <summary>
+            Obtener un Familiar en específico mediante Correo
+            </summary>
+            <param name="param">Correo del Familiar a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FamiliaresController.Post(ApiVP.Domain.Models.FamiliarCreateDTO)">
+            <summary>
+            Registrar un Familiar
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FamiliaresController.Put(System.Int32,ApiVP.Domain.Models.FamiliarCreateDTO)">
+            <summary>
+            Actualizar un Familiar en específico mediante Id
+            </summary>
+            <param name="id">Id del Familiar</param>
+            <param name="familiarCreate">Cuerpo del Familiar a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FamiliaresController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Familiar en específico mediante Id
+            </summary>
+            <param name="id">Id del Familiar a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FechaAtencionesController.Get">
+            <summary>
+            Obtener todos las FechaAtencion
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FechaAtencionesController.Get(System.Int32)">
+            <summary>
+            Obtener una FechaAtencion en específico mediante Id
+            </summary>
+            <param name="id">Id de la FechaAtencion a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FechaAtencionesController.Post(ApiVP.Domain.Models.FechaAtencionCreateDTO)">
+            <summary>
+            Registrar una FechaAtencion
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FechaAtencionesController.Put(System.Int32,ApiVP.Domain.Models.FechaAtencionCreateDTO)">
+            <summary>
+            Actualizar una FechaAtencion en específico mediante Id
+            </summary>
+            <param name="id">Id de la FechaAtencion</param>
+            <param name="fechaAtencionCreate">Cuerpo de la FechaAtencion a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.FechaAtencionesController.Delete(System.Int32)">
+            <summary>
+            Eliminar una FechaAtencion en específico mediante Id
+            </summary>
+            <param name="id">Id de la FechaAtencion a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.GradosController.Get">
+            <summary>
+            Obtener todos los Grados
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.GradosController.Get(System.Int32)">
+            <summary>
+            Obtener un Grado en específico mediante Id
+            </summary>
+            <param name="id">Id del Grado a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.GradosController.Post(ApiVP.Domain.Models.GradoCreateDTO)">
+            <summary>
+            Registrar un Grado
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.GradosController.Put(System.Int32,ApiVP.Domain.Models.GradoCreateDTO)">
+            <summary>
+            Actualizar un Grado en específico mediante Id
+            </summary>
+            <param name="id">Id del Grado</param>
+            <param name="gradoCreate">Cuerpo del Grado a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.GradosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Grado en específico mediante Id
+            </summary>
+            <param name="id">Id del Grado a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.OfertasController.Get">
+            <summary>
+            Obtener todos las Ofertas
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.OfertasController.Get(System.Int32)">
+            <summary>
+            Obtener una Oferta en específico mediante Id
+            </summary>
+            <param name="id">Id de la Oferta a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.OfertasController.GetByFamiliarCorreo(System.String)">
+            <summary>
+            Obtener una Oferta en específico mediante Correo
+            </summary>
+            <param name="param">Correo de la Oferta a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.OfertasController.Post(ApiVP.Domain.Models.OfertaCreateDTO)">
+            <summary>
+            Registrar una Oferta
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.OfertasController.Put(System.Int32,ApiVP.Domain.Models.OfertaCreateDTO)">
+            <summary>
+            Actualizar una Oferta en específico mediante Id
+            </summary>
+            <param name="id">Id de la Oferta</param>
+            <param name="ofertaCreate">Cuerpo de la Oferta a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.OfertasController.Delete(System.Int32)">
+            <summary>
+            Eliminar una Oferta en específico mediante Id
+            </summary>
+            <param name="id">Id de la Oferta a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RangoHorasController.Get">
+            <summary>
+            Obtener todos los RangoHora
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RangoHorasController.Get(System.Int32)">
+            <summary>
+            Obtener un RangoHora en específico mediante Id
+            </summary>
+            <param name="id">Id del RangoHora a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RangoHorasController.Post(ApiVP.Domain.Models.RangoHoraCreateDTO)">
+            <summary>
+            Registrar un RangoHora
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RangoHorasController.Put(System.Int32,ApiVP.Domain.Models.RangoHoraCreateDTO)">
+            <summary>
+            Actualizar un RangoHora en específico mediante Id
+            </summary>
+            <param name="id">Id del RangoHora</param>
+            <param name="rangoHoraCreate">Cuerpo del RangoHora a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RangoHorasController.Delete(System.Int32)">
+            <summary>
+            Eliminar un RangoHora en específico mediante Id
+            </summary>
+            <param name="id">Id del RangoHora a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RolesController.Get">
+            <summary>
+            Obtener todos los Roles
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RolesController.Get(System.Int32)">
+            <summary>
+            Obtener un Rol en específico mediante Id
+            </summary>
+            <param name="id">Id del Rol a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RolesController.Post(ApiVP.Domain.Models.RolCreateDTO)">
+            <summary>
+            Registrar un Rol
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RolesController.Put(System.Int32,ApiVP.Domain.Models.RolCreateDTO)">
+            <summary>
+            Actualizar un Rol en específico mediante Id
+            </summary>
+            <param name="id">Id del Rol</param>
+            <param name="rolCreate">Cuerpo del Rol a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.RolesController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Rol en específico mediante Id
+            </summary>
+            <param name="id">Id del Rol a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ServiciosController.Get">
+            <summary>
+            Obtener todos los Servicios
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ServiciosController.Get(System.Int32)">
+            <summary>
+            Obtener un Servicio en específico mediante Id
+            </summary>
+            <param name="id">Id del Servicio a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ServiciosController.GetByFamiliarCorreo(System.String)">
+            <summary>
+            Obtener un Servicio en específico mediante correo del familiar
+            </summary>
+            <param name="correo">Correo del familiar para obtener los Servicios</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ServiciosController.GetByEnfermeroCorreo(System.String)">
+            <summary>
+            Obtener un Servicio en específico mediante correo del enfermero
+            </summary>
+            <param name="correo">Correo del enfermero para obtener los Servicios</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ServiciosController.Post(ApiVP.Domain.Models.ServicioCreateDTO)">
+            <summary>
+            Registrar un Servicio
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ServiciosController.Put(System.Int32,ApiVP.Domain.Models.ServicioCreateDTO)">
+            <summary>
+            Actualizar un Servicio en específico mediante Id
+            </summary>
+            <param name="id">Id del Servicio</param>
+            <param name="servicioCreate">Cuerpo del Servicio a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.ServiciosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Servicio en específico mediante Id
+            </summary>
+            <param name="id">Id del Servicio a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.TiposController.Get">
+            <summary>
+            Obtener todos los Tipos
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.TiposController.Get(System.Int32)">
+            <summary>
+            Obtener un Tipo en específico mediante Id
+            </summary>
+            <param name="id">Id del Tipo a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.TiposController.Post(ApiVP.Domain.Models.TipoCreateDTO)">
+            <summary>
+            Registrar un Tipo
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.TiposController.Put(System.Int32,ApiVP.Domain.Models.TipoCreateDTO)">
+            <summary>
+            Actualizar un Tipo en específico mediante Id
+            </summary>
+            <param name="id">Id del Tipo</param>
+            <param name="tipoCreate">Cuerpo del Tipo a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.TiposController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Tipo en específico mediante Id
+            </summary>
+            <param name="id">Id del Tipo a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.Get">
+            <summary>
+            Obtener todos los Usuarios
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.GetCorreos">
+            <summary>
+            Obtener todos los correos de los Usuarios
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.Get(System.Int32)">
+            <summary>
+            Obtener un Usuario en específico mediante Id
+            </summary>
+            <param name="id">Id del Usuario a obtener</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.Post(ApiVP.Domain.Models.UsuarioCreateDTO)">
+            <summary>
+            Registrar un Usuario
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.Put(System.Int32,ApiVP.Domain.Models.UsuarioCreateDTO)">
+            <summary>
+            Actualizar un Usuario en específico mediante Id
+            </summary>
+            <param name="id">Id del Usuario</param>
+            <param name="usuarioCreate">Cuerpo del Usuario a actualizar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.Patch(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{ApiVP.Domain.Models.UsuarioCreateDTO})">
+            <summary>
+            Actualizar un campo en específico del Usuario
+            </summary>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Eliminar un Usuario en específico mediante Id
+            </summary>
+            <param name="id">Id del Usuario a eliminar</param>
+        </member>
+        <member name="M:ApiVP.Api.Controllers.v2.UsuariosController.Login(ApiVP.Domain.Models.UsuarioCreateDTO)">
+            <summary>
+            Login del Usuario
+            </summary>
+        </member>
+    </members>
+</doc>
