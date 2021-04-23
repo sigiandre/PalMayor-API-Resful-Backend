@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "I3hvUaeAcqfiRgRS2JU7gQzIIVRxoZ2wjaCOhUQpYFv9EWgusrwkzrD3jJtNDF/qZPlnQoRy+m4hjhIH5GsRZA==",
+  "dgSpecHash": "2f0QL83IqKgWWNcsXvx2+pLuz0Vk17E4Z1gtv+CANWrBlVMtagoGS5XsmJ7FEpWeOpp0PE3GVxrp9q3pHv9U4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Api\\ApiVP.Api.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Api\\ApiVP.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MR1SWhgfG87wfQnB+7D/PQa5vJM+q8QPqcVYb1YYApGXWtjHsAMgybQi8dZoCHxZ5umIChTzhdOcbzTUH9RCBw==",
+  "dgSpecHash": "+7jLFGwJeNRcaiKLYUmLw9RuFT/zYVRgDdxyFJUduFVaNJUcBlhfsyMEl/uOljRVsn5Uax4hpbW6ED5yugA32w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Domain\\ApiVP.Domain.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

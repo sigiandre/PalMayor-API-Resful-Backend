@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Domain\\ApiVP.Domain.csproj": {}
+    "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Domain\\ApiVP.Domain.csproj": {
+    "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Domain\\ApiVP.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj",
         "projectName": "ApiVP.Domain",
-        "projectPath": "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Domain\\ApiVP.Domain.csproj",
+        "projectPath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Domain\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

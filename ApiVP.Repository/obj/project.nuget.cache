@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uo1rVpU0czaMqUEeAeSvJHNw+e3XJxh1LjsoSVKYyb7egLfSnTrW/Sm0oJDJ0vpt2ZH9QiJ/uvc4oRauib89+Q==",
+  "dgSpecHash": "pF88mvsyf77fJKeouGtRi1bgo6whBN4c5cAQzqxHPG67Fo7gfTGj0wlataynnKZGiZIybT21MO+LWmUf+LhVLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\OneDrive - Universidad Peruana de Ciencias\\Experimentos\\Backend\\VidaPlenaAPI\\ApiVP.Repository\\ApiVP.Repository.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Repository\\ApiVP.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.1\\microsoft.aspnetcore.cryptography.internal.3.1.1.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.1\\microsoft.aspnetcore.cryptography.keyderivation.3.1.1.nupkg.sha512",

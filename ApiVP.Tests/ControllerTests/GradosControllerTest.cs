@@ -16,7 +16,7 @@ namespace ApiVP.Tests.ControllerTests
 {
     public class GradosControllerTest
     {
-        public List<Grado> listaGrados = new List<Grado> { new Grado() { Id = 1, Nombre = "test1" }, new Grado() { Id = 2, Nombre = "test2" }, new Grado() { Id = 3, Nombre = "test3" } };
+        public List<Grado> listaGrados = new List<Grado> { new Grado() { Id = 1, Nombre = "test" }, new Grado() { Id = 2, Nombre = "test3" }, new Grado() { Id = 3, Nombre = "test3" } };
         public Grado grado = new Grado { Id = 1, Nombre = "Bachiller" };
         [Fact]
         public async Task Verificar_GetListGrados()

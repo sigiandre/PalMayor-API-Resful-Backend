@@ -16,7 +16,7 @@ namespace ApiVP.Tests.ControllerTests
     {
         public List<ABVC> listaABVCs = new List<ABVC>{
             new ABVC{ Id = 1 , Descripcion = "Se baña enteramente solo", TipoId = 1},
-            new ABVC{ Id = 2 , Descripcion = "Necesita ayuda para bañarse", TipoId = 2 }
+            new ABVC{ Id = 2 , Descripcion = "Necesista ayuda prar bañarse", TipoId = 2 }
         };
         public ABVC abvc = new ABVC { Id = 1, Descripcion = "Se baña enteramente solo", TipoId = 1 };
 

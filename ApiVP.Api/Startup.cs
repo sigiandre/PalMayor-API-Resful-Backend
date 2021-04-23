@@ -133,11 +133,11 @@ namespace ApiVP.Api
 
             services.AddSwaggerGen(config =>
             {
-                config.SwaggerDoc("V1", new OpenApiInfo
+                config.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Version = "V1",
-                    Title = "Vida Plena API V1",
-                    Description = "Servicios APIrestul para la aplicación web de Vida Plena",
+                    Version = "v1",
+                    Title = "Vida Plena API v1",
+                    Description = "servicios api restul para la aplicación web de Vida Plena",
                     Contact = new OpenApiContact()
                     {
                         Name = "Vida Plena",
@@ -146,11 +146,11 @@ namespace ApiVP.Api
                     }
                 });
 
-                config.SwaggerDoc("V2", new OpenApiInfo
+                config.SwaggerDoc("v2", new OpenApiInfo
                 {
-                    Version = "V2",
-                    Title = "Vida Plena API V2",
-                    Description = "Servicios APIrestul para la aplicación web de Vida Plena",
+                    Version = "v2",
+                    Title = "Vida Plena API v2",
+                    Description = "servicios api restul para la aplicación web de Vida Plena",
                     Contact = new OpenApiContact()
                     {
                         Name = "Vida Plena",

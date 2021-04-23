@@ -72,7 +72,7 @@ namespace ApiVP.Tests.ControllerTests
         public async Task Verificar_PostServicio()
         {
             //ARRANGE
-            Servicio nuevo = new Servicio { Id = 3, EnfermeroId = 3, OfertaId = 2, Estado = "Activo", Costo = 100 };
+            Servicio nuevo = new Servicio { Id = 3, EnfermeroId = 3, OfertaId = 2, Estado = "activo", Costo = 100 };
             ServicioCreateDTO nuevoCreate = new ServicioCreateDTO { EnfermeroId = 3, OfertaId = 2 };
             var mockMapper = new MapperConfiguration(cfg =>
            {
