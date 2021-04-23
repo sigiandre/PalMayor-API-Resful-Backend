@@ -32,7 +32,7 @@ pipeline {
     }
     stage('Publish'){
       steps{
-        bat "dotnet publish"
+        bat "dotnet publish PalMayor-API-Resful-Backend\\ApiVP.csproj"
       }
     }
   }
