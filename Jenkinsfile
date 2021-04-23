@@ -32,7 +32,7 @@ pipeline {
     }
     stage('Publish'){
       steps{
-        bat "dotnet publish"
+        bat "dotnet publish ApiVP.Api\\ApiVP.Api.csproj"
       }
     }
   }
