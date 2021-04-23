@@ -10,10 +10,10 @@ pipeline {
         git credentialsId: 'netdeveloper', url: 'https://github.com/sigiandre/PalMayor-API-Resful-Backend', branch: 'master'
       }
     }
-    stage('Restore PACKAGES') {
+    stage('Restore Packages') {
       steps {
-        bat "dotnet restore --configfile NuGet.Config"
-      }
+        bat "dotnet restore"
+        }
     }
     stage('Clean') {
       steps {
