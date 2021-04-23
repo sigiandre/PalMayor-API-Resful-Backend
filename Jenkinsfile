@@ -30,6 +30,20 @@ pipeline {
         bat 'dotnet pack --no-build --output nupkgs'
       }
     }
+    stage('Running unit tests') {
+    steps {
+      bat "dotnet add ${workspace}/ApiVP.Tests/ApiVP.Tests.csproj package JUnitTestLogger --version 1.1.0"
+      bat "dotnet test ${workspace}/ApiVP.Tests/ApiVP.Tests.csproj --logger \"junit;LogFilePath=\"${WORKSPACE}\"/TestResults/1.0.0.\"${env.BUILD_NUMBER}\"/results.xml\" --configuration release --collect \"Code coverage\""
+      powershell '''
+      $destinationFolder = \"$env:WORKSPACE/TestResults\"
+      if (!(Test-Path -path $destinationFolder)) {New-Item $destinationFolder -Type Directory}
+      $file = Get-ChildItem -Path \"$env:WORKSPACE/ApiVP.Tests/ApiVP.Tests/TestResults/*/*.coverage\"
+      $file | Rename-Item -NewName testcoverage.coverage
+      $renamedFile = Get-ChildItem -Path \"$env:WORKSPACE/ApiVP.Tests/ApiVP.Tests/TestResults/*/*.coverage\"
+      Copy-Item $renamedFile -Destination $destinationFolder
+      '''
+      }        
+    }
     stage('Publish'){
       steps{
         bat "dotnet publish ApiVP.Api\\ApiVP.Api.csproj"
