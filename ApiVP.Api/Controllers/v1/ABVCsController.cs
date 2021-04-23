@@ -55,7 +55,7 @@ namespace ApiVP.Api.Controllers.v1
         {
             var abvc = mapper.Map<ABVC>(abvcCreate);
             var abvcDTO = mapper.Map<ABVCDTO>(await repository.Save(abvc));
-            return new CreatedAtRouteResult("ObtenerABVCv1", new { id = abvc.Id }, abvcDTO);
+            return new CreatedAtRouteResult("ObtenerABVC-V1", new { id = abvc.Id }, abvcDTO);
         }
 
         /// <summary>
@@ -73,7 +73,7 @@ namespace ApiVP.Api.Controllers.v1
                 return NotFound();
             }
             var abvcDTO = mapper.Map<ABVCDTO>(abvcRepo);
-            return new CreatedAtRouteResult("ObtenerABVCv1", new { id = abvc.Id }, abvcDTO);
+            return new CreatedAtRouteResult("ObtenerABVC-V1", new { id = abvc.Id }, abvcDTO);
         }
 
         /// <summary>
