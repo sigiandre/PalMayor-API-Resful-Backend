@@ -37,9 +37,9 @@ pipeline {
       powershell '''
       $destinationFolder = \"$env:WORKSPACE/TestResults\"
       if (!(Test-Path -path $destinationFolder)) {New-Item $destinationFolder -Type Directory}
-      $file = Get-ChildItem -Path \"$env:WORKSPACE/ApiVP.Tests/ApiVP.Tests/TestResults/*/*.coverage\"
+      $file = Get-ChildItem -Path \"$env:WORKSPACE/ApiVP.Tests/TestResults/*/*.coverage\"
       $file | Rename-Item -NewName testcoverage.coverage
-      $renamedFile = Get-ChildItem -Path \"$env:WORKSPACE/ApiVP.Tests/ApiVP.Tests/TestResults/*/*.coverage\"
+      $renamedFile = Get-ChildItem -Path \"$env:WORKSPACE/ApiVP.Tests/TestResults/*/*.coverage\"
       Copy-Item $renamedFile -Destination $destinationFolder
       '''
       }        
