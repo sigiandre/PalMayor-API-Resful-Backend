@@ -142,7 +142,7 @@ namespace ApiVP.Api
                     {
                         Name = "Vida Plena",
                         Email = "u201621283@upc.edu.pe",
-                        Url = new Uri("https://github.com/sigiandre/PalMayor-API-Resful-Backend")
+                        Url = new Uri("https://github.com/PalMayor/Server-Side")
                     }
                 });
 
@@ -155,7 +155,7 @@ namespace ApiVP.Api
                     {
                         Name = "Vida Plena",
                         Email = "u201621283@upc.edu.pe",
-                        Url = new Uri("https://github.com/sigiandre/PalMayor-API-Resful-Backend")
+                        Url = new Uri("https://github.com/PalMayor")
                     }
                 });
 
