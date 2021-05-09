@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SRXebZoM2SztYj84zdND47xkRi+ZAhfdBr+DcbrX8Wgc9LtXTkxXEJ2OZI5lduv4Tx1FUMslyeLpAWzcJ+YttA==",
+  "dgSpecHash": "+1LqEZku/dkC1E+e5OIAIgc26hizf6v8lKcAwz0NSX3bmU/cbymuezQY7IHg4MHvpRLEyhE7RTjHlZIWMGDXzA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\ApiVP.Tests.csproj",
+  "projectFilePath": "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\ApiVP.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

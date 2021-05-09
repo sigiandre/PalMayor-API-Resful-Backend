@@ -9259,11 +9259,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\ApiVP.Tests.csproj",
+      "projectUniqueName": "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\ApiVP.Tests.csproj",
       "projectName": "ApiVP.Tests",
-      "projectPath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\ApiVP.Tests.csproj",
+      "projectPath": "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\ApiVP.Tests.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\obj\\",
+      "outputPath": "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -9286,14 +9286,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Api\\ApiVP.Api.csproj": {
-              "projectPath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Api\\ApiVP.Api.csproj"
+            "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Api\\ApiVP.Api.csproj": {
+              "projectPath": "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Api\\ApiVP.Api.csproj"
             },
-            "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj": {
-              "projectPath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj"
+            "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj": {
+              "projectPath": "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Domain\\ApiVP.Domain.csproj"
             },
-            "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Repository\\ApiVP.Repository.csproj": {
-              "projectPath": "C:\\Users\\andre\\Desktop\\PalMayor-API-Resful-Backend\\ApiVP.Repository\\ApiVP.Repository.csproj"
+            "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Repository\\ApiVP.Repository.csproj": {
+              "projectPath": "C:\\Program Files\\Jenkins\\PalMayor\\PalMayor-API-Resful-Backend\\ApiVP.Repository\\ApiVP.Repository.csproj"
             }
           }
         }
